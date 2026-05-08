@@ -4,8 +4,9 @@ import "./index.css";
 function Home() {
   return (
     <div className="page">
-      <h1>Home Page</h1>
-      <p>Welcome to my React app! This is the home page.</p>
+      <h1>Welcome! 👋</h1>
+      <p>This is the home page of my React app.</p>
+      <p>Use the navigation above to explore the pages.</p>
     </div>
   );
 }
@@ -13,8 +14,9 @@ function Home() {
 function About() {
   return (
     <div className="page">
-      <h1>About Page</h1>
-      <p>This app was made using React and React Router.</p>
+      <h1>About 📖</h1>
+      <p>This project was made using React and React Router.</p>
+      <p>Final Hands-On Quiz for ITPS205.</p>
     </div>
   );
 }
@@ -22,8 +24,9 @@ function About() {
 function Contact() {
   return (
     <div className="page">
-      <h1>Contact Page</h1>
-      <p>You can reach me at student@email.com</p>
+      <h1>Contact 📬</h1>
+      <p>Want to get in touch? Send me a message!</p>
+      <p>Email: student@email.com</p>
     </div>
   );
 }
@@ -31,11 +34,11 @@ function Contact() {
 function Navbar() {
   return (
     <nav className="navbar">
-      <span className="logo">MyApp</span>
+      <span className="logo">Jayz Multi-Page</span>
       <div className="nav-links">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contact">Contact</Link>
+        <Link to="/" className="nav-btn">Home</Link>
+        <Link to="/about" className="nav-btn">About</Link>
+        <Link to="/contact" className="nav-btn">Contact</Link>
       </div>
     </nav>
   );
